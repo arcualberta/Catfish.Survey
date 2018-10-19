@@ -37,7 +37,7 @@ namespace Catfish.Survey
             AreaRegistration.RegisterAllAreas();
         }
 
-        public virtual void RegisterArea(AreaRegistrationContext context)
+        public override void RegisterArea(AreaRegistrationContext context)
         {
             context.Namespaces.Add("Catfish.Survey");
         }
