@@ -24,6 +24,8 @@ namespace Catfish.Survey
 
         private void InitializeManagerViews()
         {
+            System.Diagnostics.Debug.WriteLine("Initializing Manager.");
+
             var menubar = Manager.Menu.Where(m => m.InternalId == "Settings").FirstOrDefault();
 
             menubar.Items.Insert(1, new Manager.MenuItem()
@@ -33,8 +35,6 @@ namespace Catfish.Survey
                 Controller = "FormIngestion",
                 Permission = "ADMIN_CONTENT",
             });
-
-            AreaRegistration.RegisterAllAreas();
         }
         
     }

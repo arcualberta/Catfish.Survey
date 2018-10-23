@@ -8,6 +8,10 @@ namespace Catfish.Survey.Areas.Manager.Controllers
 {
     public class FormIngestionController : Controller
     {
+        public FormIngestionController() : base()
+        {
+            System.Diagnostics.Debug.WriteLine("TEST LOAD!!!!!");
+        }
         // GET: Manager/FormIngestion
         public ActionResult Index()
         {
