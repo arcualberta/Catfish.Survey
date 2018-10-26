@@ -15,7 +15,7 @@ namespace Catfish.Survey.Areas.Manager.Controllers
         // GET: Manager/FormIngestion
         public ActionResult Index()
         {
-            return View();
+            return View("Testing Views...");
         }
     }
 }

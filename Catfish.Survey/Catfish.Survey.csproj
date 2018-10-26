@@ -85,7 +85,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SurveyPlugin.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Manager\Views\FormIngestion\Index.cshtml" />
     <None Include="packages.config" />
