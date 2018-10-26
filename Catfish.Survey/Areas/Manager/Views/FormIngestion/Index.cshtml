@@ -1,5 +1,15 @@
 ﻿@model System.String
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-<h1>Form Ingestion Page!!!!</h1>
+@section Toolbar {
+    @Html.Partial("Partial/IndexToolbar")
+}
 
-<p>@Model</p>
+@*@Html.Partial("Partial/ObjectList", Model, new ViewDataDictionary() { { "showType", true }, { "showDeleteButton", true } })
+@{
+
+}*@
+
+<h1>It works!!!</h1>
